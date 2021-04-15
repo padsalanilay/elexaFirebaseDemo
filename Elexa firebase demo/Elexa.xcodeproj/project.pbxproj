@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C3813DA36441F0CDD388B74 /* libPods-ElexaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C04CECBC691279D76D3D98E /* libPods-ElexaTests.a */; };
+		6CDFDC497FFABCD123501F6D /* libPods-Elexa-ElexaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 258C56C132875534B773AC5B /* libPods-Elexa-ElexaUITests.a */; };
+		8102429E8FC291166600E32B /* libPods-Elexa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 565D39700F5A39D53997A2CC /* libPods-Elexa.a */; };
+		99043D9E2624A7350035D6C8 /* ContactDetailsVC+DepartmentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99043D9D2624A7350035D6C8 /* ContactDetailsVC+DepartmentPicker.swift */; };
+		997A5D5B26222C1400BB5E2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 997A5D5A26222C1400BB5E2A /* GoogleService-Info.plist */; };
+		997A5D7D262232A900BB5E2A /* ContactsListVC+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A5D7C262232A900BB5E2A /* ContactsListVC+Firebase.swift */; };
+		997A5D9826224AB300BB5E2A /* ContacrtDetailsVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A5D9726224AB300BB5E2A /* ContacrtDetailsVCModel.swift */; };
+		997A5D9D26224ABD00BB5E2A /* ContactDetailsVC+FireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A5D9C26224ABD00BB5E2A /* ContactDetailsVC+FireBase.swift */; };
+		99FA4EE32622108A00913BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4EE22622108A00913BF7 /* AppDelegate.swift */; };
+		99FA4EE52622108A00913BF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4EE42622108A00913BF7 /* SceneDelegate.swift */; };
+		99FA4EEA2622108A00913BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99FA4EE82622108A00913BF7 /* Main.storyboard */; };
+		99FA4EED2622108A00913BF7 /* Elexa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4EEB2622108A00913BF7 /* Elexa.xcdatamodeld */; };
+		99FA4EEF2622109200913BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99FA4EEE2622109200913BF7 /* Assets.xcassets */; };
+		99FA4EF22622109200913BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99FA4EF02622109200913BF7 /* LaunchScreen.storyboard */; };
+		99FA4EFD2622109300913BF7 /* ElexaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4EFC2622109300913BF7 /* ElexaTests.swift */; };
+		99FA4F082622109300913BF7 /* ElexaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F072622109300913BF7 /* ElexaUITests.swift */; };
+		99FA4F1C262213D600913BF7 /* ContactsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F1B262213D600913BF7 /* ContactsListTableViewController.swift */; };
+		99FA4F212622140400913BF7 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F202622140400913BF7 /* ContactDetailsViewController.swift */; };
+		99FA4F38262215D000913BF7 /* ContactsListViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F37262215D000913BF7 /* ContactsListViewController+CoreData.swift */; };
+		99FA4F3E2622170E00913BF7 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F3D2622170E00913BF7 /* PersistentContainer.swift */; };
+		99FA4F4D26221CB200913BF7 /* DTContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F4C26221CB200913BF7 /* DTContact.swift */; };
+		99FA4F5526221D4C00913BF7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F5426221D4C00913BF7 /* Contact.swift */; };
+		99FA4F5A26221E4F00913BF7 /* ContactsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F5926221E4F00913BF7 /* ContactsListViewModel.swift */; };
+		99FA4F602622202A00913BF7 /* DBContact+CoredataOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F5F2622202A00913BF7 /* DBContact+CoredataOperations.swift */; };
+		99FA4F6B262220C500913BF7 /* NSPredicates+commonPredicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F6A262220C500913BF7 /* NSPredicates+commonPredicates.swift */; };
+		99FA4F77262223B300913BF7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F76262223B300913BF7 /* Date+Extension.swift */; };
+		99FA4F822622249E00913BF7 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F812622249E00913BF7 /* String+Date.swift */; };
+		99FA4F87262224B500913BF7 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F86262224B500913BF7 /* DateFormatter+Extension.swift */; };
+		99FA4F8C262224CD00913BF7 /* ISODateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4F8B262224CD00913BF7 /* ISODateFormatter+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99FA4EF92622109300913BF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99FA4ED72622108A00913BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99FA4EDE2622108A00913BF7;
+			remoteInfo = Elexa;
+		};
+		99FA4F042622109300913BF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99FA4ED72622108A00913BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99FA4EDE2622108A00913BF7;
+			remoteInfo = Elexa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D49E20DE19224DC206C94A8 /* Pods-ElexaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElexaTests.debug.xcconfig"; path = "Target Support Files/Pods-ElexaTests/Pods-ElexaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1578D37085CA948476D10F92 /* Pods-ElexaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElexaTests.release.xcconfig"; path = "Target Support Files/Pods-ElexaTests/Pods-ElexaTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D30E56E604E2ABC61A27D9C /* Pods-Elexa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elexa.debug.xcconfig"; path = "Target Support Files/Pods-Elexa/Pods-Elexa.debug.xcconfig"; sourceTree = "<group>"; };
+		258C56C132875534B773AC5B /* libPods-Elexa-ElexaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Elexa-ElexaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C04CECBC691279D76D3D98E /* libPods-ElexaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ElexaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		565D39700F5A39D53997A2CC /* libPods-Elexa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Elexa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		841D5690D85A8EFC08BAE54A /* Pods-Elexa-ElexaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elexa-ElexaUITests.release.xcconfig"; path = "Target Support Files/Pods-Elexa-ElexaUITests/Pods-Elexa-ElexaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		99043D9D2624A7350035D6C8 /* ContactDetailsVC+DepartmentPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactDetailsVC+DepartmentPicker.swift"; sourceTree = "<group>"; };
+		997A5D5A26222C1400BB5E2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		997A5D7C262232A900BB5E2A /* ContactsListVC+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsListVC+Firebase.swift"; sourceTree = "<group>"; };
+		997A5D9726224AB300BB5E2A /* ContacrtDetailsVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacrtDetailsVCModel.swift; sourceTree = "<group>"; };
+		997A5D9C26224ABD00BB5E2A /* ContactDetailsVC+FireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailsVC+FireBase.swift"; sourceTree = "<group>"; };
+		99FA4EDF2622108A00913BF7 /* Elexa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elexa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FA4EE22622108A00913BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99FA4EE42622108A00913BF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99FA4EE92622108A00913BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99FA4EEC2622108A00913BF7 /* Elexa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elexa.xcdatamodel; sourceTree = "<group>"; };
+		99FA4EEE2622109200913BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99FA4EF12622109200913BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99FA4EF32622109200913BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FA4EF82622109300913BF7 /* ElexaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElexaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FA4EFC2622109300913BF7 /* ElexaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElexaTests.swift; sourceTree = "<group>"; };
+		99FA4EFE2622109300913BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FA4F032622109300913BF7 /* ElexaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElexaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FA4F072622109300913BF7 /* ElexaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElexaUITests.swift; sourceTree = "<group>"; };
+		99FA4F092622109300913BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FA4F1B262213D600913BF7 /* ContactsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTableViewController.swift; sourceTree = "<group>"; };
+		99FA4F202622140400913BF7 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		99FA4F37262215D000913BF7 /* ContactsListViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsListViewController+CoreData.swift"; sourceTree = "<group>"; };
+		99FA4F3D2622170E00913BF7 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		99FA4F4C26221CB200913BF7 /* DTContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTContact.swift; sourceTree = "<group>"; };
+		99FA4F5426221D4C00913BF7 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		99FA4F5926221E4F00913BF7 /* ContactsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewModel.swift; sourceTree = "<group>"; };
+		99FA4F5F2622202A00913BF7 /* DBContact+CoredataOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBContact+CoredataOperations.swift"; sourceTree = "<group>"; };
+		99FA4F6A262220C500913BF7 /* NSPredicates+commonPredicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicates+commonPredicates.swift"; sourceTree = "<group>"; };
+		99FA4F76262223B300913BF7 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		99FA4F812622249E00913BF7 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		99FA4F86262224B500913BF7 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		99FA4F8B262224CD00913BF7 /* ISODateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISODateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		9B141DABF97C6F5D216789DC /* Pods-Elexa-ElexaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elexa-ElexaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Elexa-ElexaUITests/Pods-Elexa-ElexaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6E5D7C0D5A4DC4CFB681CC1 /* Pods-Elexa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elexa.release.xcconfig"; path = "Target Support Files/Pods-Elexa/Pods-Elexa.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99FA4EDC2622108A00913BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8102429E8FC291166600E32B /* libPods-Elexa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA4EF52622109300913BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3813DA36441F0CDD388B74 /* libPods-ElexaTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA4F002622109300913BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDFDC497FFABCD123501F6D /* libPods-Elexa-ElexaUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16B130D0751DB6036B4590C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				565D39700F5A39D53997A2CC /* libPods-Elexa.a */,
+				258C56C132875534B773AC5B /* libPods-Elexa-ElexaUITests.a */,
+				4C04CECBC691279D76D3D98E /* libPods-ElexaTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99FA4ED62622108A00913BF7 = {
+			isa = PBXGroup;
+			children = (
+				99FA4EE12622108A00913BF7 /* Elexa */,
+				99FA4EFB2622109300913BF7 /* ElexaTests */,
+				99FA4F062622109300913BF7 /* ElexaUITests */,
+				99FA4EE02622108A00913BF7 /* Products */,
+				A9055192134FA10020887D31 /* Pods */,
+				16B130D0751DB6036B4590C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99FA4EE02622108A00913BF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4EDF2622108A00913BF7 /* Elexa.app */,
+				99FA4EF82622109300913BF7 /* ElexaTests.xctest */,
+				99FA4F032622109300913BF7 /* ElexaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99FA4EE12622108A00913BF7 /* Elexa */ = {
+			isa = PBXGroup;
+			children = (
+				997A5D5A26222C1400BB5E2A /* GoogleService-Info.plist */,
+				99FA4F752622239200913BF7 /* Extensions */,
+				99FA4F5E26221FEF00913BF7 /* NetworkManager */,
+				99FA4F4926221C7E00913BF7 /* DataModel */,
+				99FA4F3C262216C200913BF7 /* CoreDataManager */,
+				99FA4F452622184500913BF7 /* Utils */,
+				99FA4EF32622109200913BF7 /* Info.plist */,
+				99FA4F282622157600913BF7 /* ViewControllers */,
+			);
+			path = Elexa;
+			sourceTree = "<group>";
+		};
+		99FA4EFB2622109300913BF7 /* ElexaTests */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4EFC2622109300913BF7 /* ElexaTests.swift */,
+				99FA4EFE2622109300913BF7 /* Info.plist */,
+			);
+			path = ElexaTests;
+			sourceTree = "<group>";
+		};
+		99FA4F062622109300913BF7 /* ElexaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4F072622109300913BF7 /* ElexaUITests.swift */,
+				99FA4F092622109300913BF7 /* Info.plist */,
+			);
+			path = ElexaUITests;
+			sourceTree = "<group>";
+		};
+		99FA4F282622157600913BF7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4F2C2622158500913BF7 /* ContactsListVC */,
+				99FA4F332622159F00913BF7 /* ContactDetailsVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		99FA4F2C2622158500913BF7 /* ContactsListVC */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4F1B262213D600913BF7 /* ContactsListTableViewController.swift */,
+				99FA4F37262215D000913BF7 /* ContactsListViewController+CoreData.swift */,
+				99FA4F5926221E4F00913BF7 /* ContactsListViewModel.swift */,
+				997A5D7C262232A900BB5E2A /* ContactsListVC+Firebase.swift */,
+			);
+			path = ContactsListVC;
+			sourceTree = "<group>";
+		};
+		99FA4F332622159F00913BF7 /* ContactDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				99043D9D2624A7350035D6C8 /* ContactDetailsVC+DepartmentPicker.swift */,
+				99FA4F202622140400913BF7 /* ContactDetailsViewController.swift */,
+				997A5D9726224AB300BB5E2A /* ContacrtDetailsVCModel.swift */,
+				997A5D9C26224ABD00BB5E2A /* ContactDetailsVC+FireBase.swift */,
+			);
+			path = ContactDetailsVC;
+			sourceTree = "<group>";
+		};
+		99FA4F3C262216C200913BF7 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4EEB2622108A00913BF7 /* Elexa.xcdatamodeld */,
+				99FA4F3D2622170E00913BF7 /* PersistentContainer.swift */,
+				99FA4F5F2622202A00913BF7 /* DBContact+CoredataOperations.swift */,
+				99FA4F6A262220C500913BF7 /* NSPredicates+commonPredicates.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		99FA4F452622184500913BF7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4EE22622108A00913BF7 /* AppDelegate.swift */,
+				99FA4EE42622108A00913BF7 /* SceneDelegate.swift */,
+				99FA4EE82622108A00913BF7 /* Main.storyboard */,
+				99FA4EEE2622109200913BF7 /* Assets.xcassets */,
+				99FA4EF02622109200913BF7 /* LaunchScreen.storyboard */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		99FA4F4926221C7E00913BF7 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4F4B26221C9B00913BF7 /* APPDataModel */,
+				99FA4F4A26221C8800913BF7 /* APIDataModel */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		99FA4F4A26221C8800913BF7 /* APIDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4F4C26221CB200913BF7 /* DTContact.swift */,
+			);
+			path = APIDataModel;
+			sourceTree = "<group>";
+		};
+		99FA4F4B26221C9B00913BF7 /* APPDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4F5426221D4C00913BF7 /* Contact.swift */,
+			);
+			path = APPDataModel;
+			sourceTree = "<group>";
+		};
+		99FA4F5E26221FEF00913BF7 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		99FA4F752622239200913BF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4F76262223B300913BF7 /* Date+Extension.swift */,
+				99FA4F812622249E00913BF7 /* String+Date.swift */,
+				99FA4F86262224B500913BF7 /* DateFormatter+Extension.swift */,
+				99FA4F8B262224CD00913BF7 /* ISODateFormatter+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9055192134FA10020887D31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D30E56E604E2ABC61A27D9C /* Pods-Elexa.debug.xcconfig */,
+				F6E5D7C0D5A4DC4CFB681CC1 /* Pods-Elexa.release.xcconfig */,
+				9B141DABF97C6F5D216789DC /* Pods-Elexa-ElexaUITests.debug.xcconfig */,
+				841D5690D85A8EFC08BAE54A /* Pods-Elexa-ElexaUITests.release.xcconfig */,
+				0D49E20DE19224DC206C94A8 /* Pods-ElexaTests.debug.xcconfig */,
+				1578D37085CA948476D10F92 /* Pods-ElexaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99FA4EDE2622108A00913BF7 /* Elexa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA4F0C2622109300913BF7 /* Build configuration list for PBXNativeTarget "Elexa" */;
+			buildPhases = (
+				6902E7F1A40FE97A70059019 /* [CP] Check Pods Manifest.lock */,
+				99FA4EDB2622108A00913BF7 /* Sources */,
+				99FA4EDC2622108A00913BF7 /* Frameworks */,
+				99FA4EDD2622108A00913BF7 /* Resources */,
+				EC8F4E79FBEA08F31A94E1A8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elexa;
+			productName = Elexa;
+			productReference = 99FA4EDF2622108A00913BF7 /* Elexa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99FA4EF72622109300913BF7 /* ElexaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA4F0F2622109300913BF7 /* Build configuration list for PBXNativeTarget "ElexaTests" */;
+			buildPhases = (
+				19FA6A8DF6BE3904C860D4FF /* [CP] Check Pods Manifest.lock */,
+				99FA4EF42622109300913BF7 /* Sources */,
+				99FA4EF52622109300913BF7 /* Frameworks */,
+				99FA4EF62622109300913BF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99FA4EFA2622109300913BF7 /* PBXTargetDependency */,
+			);
+			name = ElexaTests;
+			productName = ElexaTests;
+			productReference = 99FA4EF82622109300913BF7 /* ElexaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99FA4F022622109300913BF7 /* ElexaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA4F122622109300913BF7 /* Build configuration list for PBXNativeTarget "ElexaUITests" */;
+			buildPhases = (
+				389C0745B625E90E7AC71202 /* [CP] Check Pods Manifest.lock */,
+				99FA4EFF2622109300913BF7 /* Sources */,
+				99FA4F002622109300913BF7 /* Frameworks */,
+				99FA4F012622109300913BF7 /* Resources */,
+				3C1CB888BE08FD94CAF8F25B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99FA4F052622109300913BF7 /* PBXTargetDependency */,
+			);
+			name = ElexaUITests;
+			productName = ElexaUITests;
+			productReference = 99FA4F032622109300913BF7 /* ElexaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99FA4ED72622108A00913BF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					99FA4EDE2622108A00913BF7 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					99FA4EF72622109300913BF7 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 99FA4EDE2622108A00913BF7;
+					};
+					99FA4F022622109300913BF7 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 99FA4EDE2622108A00913BF7;
+					};
+				};
+			};
+			buildConfigurationList = 99FA4EDA2622108A00913BF7 /* Build configuration list for PBXProject "Elexa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99FA4ED62622108A00913BF7;
+			productRefGroup = 99FA4EE02622108A00913BF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99FA4EDE2622108A00913BF7 /* Elexa */,
+				99FA4EF72622109300913BF7 /* ElexaTests */,
+				99FA4F022622109300913BF7 /* ElexaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99FA4EDD2622108A00913BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FA4EF22622109200913BF7 /* LaunchScreen.storyboard in Resources */,
+				997A5D5B26222C1400BB5E2A /* GoogleService-Info.plist in Resources */,
+				99FA4EEF2622109200913BF7 /* Assets.xcassets in Resources */,
+				99FA4EEA2622108A00913BF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA4EF62622109300913BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA4F012622109300913BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19FA6A8DF6BE3904C860D4FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElexaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		389C0745B625E90E7AC71202 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elexa-ElexaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C1CB888BE08FD94CAF8F25B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elexa-ElexaUITests/Pods-Elexa-ElexaUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elexa-ElexaUITests/Pods-Elexa-ElexaUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elexa-ElexaUITests/Pods-Elexa-ElexaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6902E7F1A40FE97A70059019 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elexa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8F4E79FBEA08F31A94E1A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elexa/Pods-Elexa-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elexa/Pods-Elexa-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elexa/Pods-Elexa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99FA4EDB2622108A00913BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FA4F8C262224CD00913BF7 /* ISODateFormatter+Extension.swift in Sources */,
+				997A5D7D262232A900BB5E2A /* ContactsListVC+Firebase.swift in Sources */,
+				99FA4F822622249E00913BF7 /* String+Date.swift in Sources */,
+				99FA4F5526221D4C00913BF7 /* Contact.swift in Sources */,
+				99FA4F212622140400913BF7 /* ContactDetailsViewController.swift in Sources */,
+				99FA4EED2622108A00913BF7 /* Elexa.xcdatamodeld in Sources */,
+				99FA4EE32622108A00913BF7 /* AppDelegate.swift in Sources */,
+				99FA4F1C262213D600913BF7 /* ContactsListTableViewController.swift in Sources */,
+				99FA4F602622202A00913BF7 /* DBContact+CoredataOperations.swift in Sources */,
+				99FA4F87262224B500913BF7 /* DateFormatter+Extension.swift in Sources */,
+				99FA4F5A26221E4F00913BF7 /* ContactsListViewModel.swift in Sources */,
+				997A5D9D26224ABD00BB5E2A /* ContactDetailsVC+FireBase.swift in Sources */,
+				99FA4F3E2622170E00913BF7 /* PersistentContainer.swift in Sources */,
+				99FA4F38262215D000913BF7 /* ContactsListViewController+CoreData.swift in Sources */,
+				997A5D9826224AB300BB5E2A /* ContacrtDetailsVCModel.swift in Sources */,
+				99FA4F4D26221CB200913BF7 /* DTContact.swift in Sources */,
+				99FA4EE52622108A00913BF7 /* SceneDelegate.swift in Sources */,
+				99FA4F77262223B300913BF7 /* Date+Extension.swift in Sources */,
+				99043D9E2624A7350035D6C8 /* ContactDetailsVC+DepartmentPicker.swift in Sources */,
+				99FA4F6B262220C500913BF7 /* NSPredicates+commonPredicates.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA4EF42622109300913BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FA4EFD2622109300913BF7 /* ElexaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA4EFF2622109300913BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FA4F082622109300913BF7 /* ElexaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99FA4EFA2622109300913BF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99FA4EDE2622108A00913BF7 /* Elexa */;
+			targetProxy = 99FA4EF92622109300913BF7 /* PBXContainerItemProxy */;
+		};
+		99FA4F052622109300913BF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99FA4EDE2622108A00913BF7 /* Elexa */;
+			targetProxy = 99FA4F042622109300913BF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99FA4EE82622108A00913BF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99FA4EE92622108A00913BF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99FA4EF02622109200913BF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99FA4EF12622109200913BF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99FA4F0A2622109300913BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99FA4F0B2622109300913BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99FA4F0D2622109300913BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D30E56E604E2ABC61A27D9C /* Pods-Elexa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = Elexa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elexaconsumer.Elexa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99FA4F0E2622109300913BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E5D7C0D5A4DC4CFB681CC1 /* Pods-Elexa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = Elexa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elexaconsumer.Elexa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99FA4F102622109300913BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D49E20DE19224DC206C94A8 /* Pods-ElexaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = ElexaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elexaconsumer.ElexaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elexa.app/Elexa";
+			};
+			name = Debug;
+		};
+		99FA4F112622109300913BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1578D37085CA948476D10F92 /* Pods-ElexaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = ElexaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elexaconsumer.ElexaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elexa.app/Elexa";
+			};
+			name = Release;
+		};
+		99FA4F132622109300913BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B141DABF97C6F5D216789DC /* Pods-Elexa-ElexaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = ElexaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elexaconsumer.ElexaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Elexa;
+			};
+			name = Debug;
+		};
+		99FA4F142622109300913BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841D5690D85A8EFC08BAE54A /* Pods-Elexa-ElexaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = ElexaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elexaconsumer.ElexaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Elexa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99FA4EDA2622108A00913BF7 /* Build configuration list for PBXProject "Elexa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA4F0A2622109300913BF7 /* Debug */,
+				99FA4F0B2622109300913BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA4F0C2622109300913BF7 /* Build configuration list for PBXNativeTarget "Elexa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA4F0D2622109300913BF7 /* Debug */,
+				99FA4F0E2622109300913BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA4F0F2622109300913BF7 /* Build configuration list for PBXNativeTarget "ElexaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA4F102622109300913BF7 /* Debug */,
+				99FA4F112622109300913BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA4F122622109300913BF7 /* Build configuration list for PBXNativeTarget "ElexaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA4F132622109300913BF7 /* Debug */,
+				99FA4F142622109300913BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99FA4EEB2622108A00913BF7 /* Elexa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99FA4EEC2622108A00913BF7 /* Elexa.xcdatamodel */,
+			);
+			currentVersion = 99FA4EEC2622108A00913BF7 /* Elexa.xcdatamodel */;
+			path = Elexa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 99FA4ED72622108A00913BF7 /* Project object */;
+}
